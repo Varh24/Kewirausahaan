@@ -1,0 +1,212 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric}
+
+
+\begin{document}
+
+\title{Panduan Implementasi Kepemimpinan 4.0 pada Startup Teknologi: Strategi Integrasi Kerja Jarak Jauh, Kolaborasi AI, dan Inklusi Neurodiversitas}
+
+\author{
+    Dewitra Fellisha Putri\textsuperscript{1},
+    Diva Raihan Handriansyah\textsuperscript{2}
+    Daffa Dhiya Ulhaq\textsuperscript{3},
+    Muhammad Paris Al-Fajri\textsuperscript{4},
+    Naila Aufa\textsuperscript{5} \\
+    \textit{[Departemen Matematika dan Sains Data FMIPA Unand]} \\
+    \textit{[Limau Manis, Pauh, Kota Padang, Sumatera Barat,  Indonesia]} \\
+    Email: \textsuperscript{1}dewitrafellisha411@gmail.com,
+    \textsuperscript{2}ulhaqdaffadhiya9@gmail.com,
+    \textsuperscript{3}parisalfajri6@gmail.com,
+    \textsuperscript{4}nailaaufa29@gmail.com,
+    \textsuperscript{5}divaraihan24@gmail.com
+}
+\maketitle
+
+% --- ABSTRAK BAHASA INGGRIS ---
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\IEEEkeywordsname}{Keywords}
+\begin{abstract}
+Rapid digital advancements and post-pandemic shifts have fundamentally altered organizational operations. Tech startups now face complex challenges: managing distributed teams, leveraging artificial intelligence (AI) for organizational management, and fostering an inclusive environment for diverse cognitive styles (neurodiversity). This article aims to design a practical Leadership 4.0 guide tailored for the tech startup ecosystem. The methodology employs a descriptive qualitative approach via a systematic literature review of recent sources (2020–2025). The result is an integrated framework synergizing effective remote communication strategies, ethical human-AI collaboration models, and inclusive talent management for neurodivergent individuals. This guide is intended as a practical reference for startup leaders navigating Industry 4.0 complexities, ensuring sustainable innovation while upholding humanistic organizational values.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Leadership 4.0, Technology Startups, Remote Work, AI Collaboration, Neurodiversity.
+\end{IEEEkeywords}
+
+% --- ABSTRAK BAHASA INDONESIA ---
+\renewcommand{\abstractname}{Abstrak}
+\renewcommand{\IEEEkeywordsname}{Kata Kunci}
+\begin{abstract}
+Perkembangan teknologi digital dan perubahan dinamika pascapandemi mengubah lanskap operasional organisasi secara fundamental. Startup teknologi kini menghadapi tantangan sulit: mengelola tim yang bekerja dari berbagai tempat, menggunakan kecerdasan buatan (AI) untuk mengatur perusahaan, dan menciptakan lingkungan kerja yang ramah bagi semua jenis cara berpikir (neurodiversitas). Artikel ini bertujuan merancang panduan aplikatif mengenai Kepemimpinan 4.0 khusus untuk ekosistem startup teknologi. Metodologi yang digunakan adalah pendekatan kualitatif deskriptif melalui studi literatur sistematis terhadap sumber terkini (2020–2025). Hasil artikel ini berupa kerangka kerja terintegrasi yang menyinergikan strategi komunikasi efektif untuk tim jarak jauh, model kolaborasi etis manusia-AI, dan praktik manajemen talenta inklusif bagi individu neurodivergent. Panduan ini diharapkan menjadi acuan praktis bagi pemimpin startup dalam menavigasi kompleksitas era industri 4.0 untuk memastikan keberlanjutan inovasi dan mempertahankan nilai humanis dalam organisasi.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Kepemimpinan 4.0, Startup Teknologi, Kerja Jarak Jauh, Kolaborasi AI, Neurodiversitas.
+\end{IEEEkeywords}
+
+\section{Pendahuluan}
+Di dunia yang serba modern sekarang, transformasi digital adalah sesuatu yang sangat penting pada zaman sekarang ini.
+Transformasi digital mengubah cara organisasi bekerja, berkomunikasi, dan berinovasi. Teknologi yang ada seperti AI, Cloud, maupun IoT, membuat pengambilan keputusan menjadi lebih tepat dan cerdas \cite{ref1}.
+Di tengah perubahan yang cepat, seorang pemimpin dituntut memahami dan mengatur perkembangan teknologi tanpa mengabaikan aspek kemanusiaan di tempat kerja \cite{ref2}.
+
+Bersamaan dengan itu muncul konsep kepemimpinan 4.0 yang menekankan pentingnya adaptasi, inovasi, dan empati \cite{ref3}.
+Seorang pemimpin perlu memiliki literasi digital yang kuat serta kemampuan berpikir berbasis data, disertai pemahaman terhadap implikasi etis dari penggunaan teknologi cerdas \cite{ref4}.
+Oleh karena itu, penguasaan teknologi harus diimbangi dengan kematangan sosial dan emosional bagi seorang pemimpin.
+
+Dalam hal startup teknologi, kepemimpinan menuntut kecepatan dan arah yang jelas.
+Pemimpin perlu mengelola tim yang tersebar agar koordinasi dan kohesi tetap terjaga.
+Struktur organisasi yang datar serta ritme inovasi yang tinggi membutuhkan kepemimpinan yang tangkas agar organisasi tersebut berjalan dengan baik \cite{ref5}.
+Contohnya pada tahun 2021 lalu saat setelah pandemi, sistem kerja jarak jauh menjadi hal yang umum diseluruh dunia bagi semua organisasi.
+Ini terjadi dikarenakan sifat pemimpin yang cepat dan tangkas dalam beradaptasi dengan masalah yang datang.
+Hasilnya organisasi tidak bubar ataupun gulung tikar.
+
+Kepemimpinan modern juga menekankan pentingnya inklusivitas, termasuk dalam konteks neurodiversitas.
+Seperti seseorang dengan autisme atau ADHD memiliki cara berpikir berbeda yang dapat meningkatkan kreativitas dan kinerja tim \cite{ref6}.
+Berbagai penelitian menunjukkan bahwa keberagaman mendorong munculnya solusi yang lebih inovatif, sehingga membuat sseorang pemimpin 4.0 perlu menciptakan lingkungan kerja yang inklusif agar setiap individu dapat berkontribusi secara optimal sesuai potensinya.
+
+\section{Tinjauan Pustaka}
+% Catatan: \textup{} sudah tidak diperlukan lagi karena sudah diperbaiki di preamble
+\subsection{Evolusi Model Kepemimpinan: Dari Tradisional ke 4.0}
+Kepemimpinan didefinisikan sebagai upaya untuk mempengaruhi orang lain dengan memberikan dorongan dan bimbingan agar bekerja sama mencapai tujuan yang telah disepakati bersama. Meskipun begitu, cara penerapan kepemimpinan telah mengalami transformasi seiring perubahan dinamika industri. Secara historis, gaya kepemimpinan yang pertama kali berkembang adalah kepemimpinan transaksional. Model kepemimpinan transaksional adalah model kepemimpinan berfokus pada transaksi antar pribadi sebagai hubungan pertukaran dimana pemimpin memberikan reward kepada pengikut jika mencapai target atau kinerja yang baik, dan memberikan punishment jika kinerja tidak sesuai harapan \cite{ref8}. Gaya kepemimpinan ini sangat memprioritaskan nilai moral yang menuntut keadilan dan transparansi suatu organisasi dalam perusahaan.
+
+Seiring meningkatnya kebutuhan organisasi terhadap inovasi dan kreativias, model kepemimpinan transformasional mulai berkembang. Model kepemimpinan transformasional adalah model yang dimana para pemimpin mendorong, mengispirasi dan memotivasi pengikut. Pemimpin transformasional juga berfokus pada pengembangan potensi, mendorong kreativitas dan menciptakan perubahan positif pada budaya kerja \cite{ref8}.
+
+Memasuki era digital, kepemimpinan berkembang menjadi lebih kolaboratif, adaptif dan berbasis teknologi. Riset  menunjukkan bahwa dalam Industri 4.0, model transaksional tidak sepenuhnya ditinggalkan, melainkan perlu dimediasi oleh kapabilitas digital agar tetap relevan dengan tujuan strategis organisasi \cite{ref7}. Selain itu, revolusi industri 4.0 telah membawa perubahan signifikan dalam lanskap bisnis global dan kepemimpinan. Era ini ditandai dengan integrasi yang mendalam antara teknologi digital dan kehidupan manusia, menciptakan ekosistem yang saling terhubung dan cerdas.
+
+\subsection{Studi Kasus: Kunci Sukses Startup Teknologi}
+Implementasi Kepemimpinan 4.0 terlihat melalui perusahaan teknologi yang menjadikan tantangan era digital sebagai keunggulan kompetitif.
+
+Contoh startup yang mengikuti kepemimpinan 4.0 salah satunya adalah Gitlab dan Sticth Fix. GitLab menguasai kerja jarak jauh dengan beroperasi sepenuhnya tanpa kantor fisik. Perusahaan ini membuktikan tim terdistribusi di berbagai zona waktu mampu beroperasi secara produktif. Kunci kesuksesan pemimpin terletak pada dokumentasi radikal daripada pengawasan ketat. Setiap proses kerja tercatat transparan sehingga karyawan tidak perlu menunggu respons atasan untuk melanjutkan tugas. Model kepemimpinan ini mengandalkan kepercayaan dan sistem alih-alih kehadiran fisik \cite{ref9}. Stitch Fix menunjukkan model kolaborasi efektif antara manusia dan kecerdasan buatan. Layanan penataan gaya personal ini menggabungkan stylist manusia dengan algoritma. Algoritma bertugas melakukan penyaringan awal dari ribuan pilihan pakaian. Keputusan akhir yang membutuhkan empati dan estetika tetap berada di tangan stylist manusia. Pemimpin berhasil menempatkan teknologi sebagai mitra kerja. Pendekatan ini membuat tim manusia bekerja lebih efisien dan fokus pada aspek kreatif \cite{ref10}.
+
+\subsection{Strategi Efektif untuk Kerja Jarak Jauh}
+Kerja jarak jauh berfungsi sebagai sistem operasional di mana pegawai menyelesaikan tanggung jawab di luar batas kantor tradisional menggunakan teknologi komunikasi digital \cite{ref11}. Praktik ini meluas secara signifikan setelah pandemi COVID-19. Startup semakin banyak mengadopsi model ini untuk mempercepat proses kerja secara global. Riset mengidentifikasi tiga pendorong utama keberhasilan implementasi kerja jarak jauh. Faktor tersebut meliputi fleksibilitas waktu dan protokol komunikasi terstruktur serta sistem evaluasi kinerja berbasis hasil \cite{ref11}. Mempertahankan keterlibatan karyawan dalam tim virtual memerlukan kejelasan peran dan rasa saling percaya antar anggota. Umpan balik rutin dari pemimpin juga memainkan peran krusial. Keterlibatan manajerial berdampak langsung pada moral dan kohesi tim dalam lingkungan kerja terdistribusi \cite{ref5}. Efektivitas tim virtual bergantung pada kepemimpinan yang mampu membangun empati dan membina hubungan sosial yang solid di luar elemen struktural. Teknologi berfungsi sebagai alat pendukung sementara aspek manusia tetap menjadi fondasi operasional jarak jauh yang sukses.
+
+Teknologi kolaboratif membangun konektivitas dan transparansi yang diperlukan. Organisasi harus mengembangkan infrastruktur digital yang memungkinkan komunikasi terbuka lintas tim. Penerapan praktik terbaik kerja jarak jauh menuntut kepemimpinan adaptif yang didasarkan pada kepercayaan. Pemimpin di era industri saat ini harus menyeimbangkan pemanfaatan teknologi dengan kebutuhan manusia untuk mempertahankan produktivitas dan kesejahteraan karyawan di lingkungan digital.
+
+\subsection{Implementasi AI dalam Leadership}
+Integrasi kecerdasan buatan mengubah fungsi fundamental kepemimpinan dari intuisi murni menjadi pendekatan berbasis data. Pemimpin modern menggunakan algoritma pembelajaran mesin untuk memproses informasi dalam skala besar. Hal ini memungkinkan pengambilan keputusan strategis yang lebih cepat dan akurat di tengah ketidakpastian pasar \cite{ref12}.
+        
+Peran AI dalam kepemimpinan melampaui otomatisasi tugas administratif. Teknologi ini berfungsi sebagai mitra kognitif yang memperluas kapabilitas analitis pemimpin. AI menangani pemrosesan data kompleks sementara pemimpin manusia fokus pada penilaian kontekstual dan pertimbangan etis. Kolaborasi ini menciptakan bentuk kecerdasan hibrida yang meningkatkan kualitas keputusan organisasi \cite{ref12}. Implementasi AI juga berdampak signifikan pada manajemen talenta. Algoritma membantu pemimpin mengidentifikasi kesenjangan keterampilan dalam tim dan memprediksi kebutuhan rekrutmen masa depan. Penggunaan alat ini menuntut pengawasan ketat untuk mencegah bias algoritmik yang mungkin terjadi dalam data pelatihan. Tanggung jawab etis tetap berada sepenuhnya di tangan pemimpin manusia meskipun analisis dilakukan oleh mesin \cite{ref13}.
+        
+Pemimpin 4.0 harus mengembangkan kompetensi teknis untuk menginterpretasikan hasil analisis AI secara kritis. Pemahaman tentang batasan teknologi menjadi prasyarat untuk menghindari ketergantungan berlebihan pada rekomendasi otomatis. Keberhasilan implementasi AI bergantung pada kemampuan pemimpin menyelaraskan keluaran teknis dengan nilai inti dan tujuan jangka panjang organisasi \cite{ref13}.
+
+\subsection{Neurodiversity di Tempat Kerja}
+Neurodiversity dalam hal profesional mengakui variasi fungsi neurologis sebagai sumber keunggulan kompetitif. Paradigma ini memandang individu dengan kondisi seperti autisme atau ADHD sebagai aset kognitif unik yang membawa kemampuan berpikir analitis dan kreativitas berbeda dalam pemecahan masalah. Pandangan ini menolak pendekatan medis tradisional yang melihat kondisi tersebut sebagai gangguan. Pendekatan biopsikososial diperlukan untuk memahami neurodiversity di tempat kerja. Hal ini melibatkan penyesuaian lingkungan kerja terhadap kebutuhan individu alih-alih memaksa penyesuaian diri pada sistem yang kaku. Hambatan bagi pekerja neurodivergen sering muncul dari lingkungan yang tidak inklusif. Perusahaan perlu menerapkan akomodasi yang wajar seperti fleksibilitas waktu kerja dan penggunaan teknologi bantu untuk mengatasi hambatan tersebut \cite{ref14}.
+        
+Keberhasilan penerapan neurodiversity bergantung pada sistem sumber daya manusia yang bebas bias. Proses rekrutmen dan evaluasi kinerja harus dirancang ulang untuk memastikan keadilan. Penggunaan wawancara terstruktur dan simulasi kerja dapat mencegah kerugian bagi kandidat neurodivergen akibat standar sosial yang tidak relevan. Pekerja neurodivergen terbukti menunjukkan etika kerja tinggi dan perhatian terhadap detail yang meningkatkan kinerja organisasi secara keseluruhan \cite{ref15}. Penerapan konsep neurodiversity berfungsi sebagai strategi manajemen sumber daya manusia yang cerdas di luar inklusi sosial. Lingkungan kerja yang ramah bagi berbagai tipe kognisi berpotensi menghasilkan keunggulan inovatif jangka panjang dari keberagaman cara berpikir karyawan.
+
+\section{Metodologi}
+Metodologi penyusunan "Panduan Implementasi Kepemimpinan 4.0 pada Startup Teknologi: Strategi Integrasi Kerja Jarak Jauh, Kolaborasi AI, dan Inklusi Neurodiversitas" menggunakan pendekatan deskriptif kualitatif melalui studi literatur sistematis dan pengembangan kerangka konseptual. Pendekatan ini dipilih untuk mensintesis teori dan praktik terbaik terkini menjadi panduan aplikatif.
+
+\subsection{Framework Pengembangan Panduan}
+
+\begin{figure}[htbp]
+\centering
+\scalebox{0.75}{%
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    core/.style={circle, draw=black, fill=blue!20, thick, text width=2.5cm, align=center, font=\bfseries, minimum size=2.5cm},
+    pillar/.style={rectangle, draw=black, fill=green!20, thick, text width=3cm, align=center, minimum height=1.2cm},
+    arrow/.style={-Latex, thick, draw=black}
+]
+    \node (core) [core] {Kepemimpinan 4.0};
+    \node (pillar1) [pillar, above left=of core] {Strategi Remote Work};
+    \node (pillar2) [pillar, above right=of core] {Kolaborasi AI};
+    \node (pillar3) [pillar, below=of core] {Inklusi Neurodiversitas};
+
+    \draw [arrow] (core) -- (pillar1);
+    \draw [arrow] (core) -- (pillar2);
+    \draw [arrow] (core) -- (pillar3);
+    \draw [arrow, densely dashed] (pillar1) -- (pillar2);
+    \draw [arrow, densely dashed] (pillar2) -- (pillar3);
+    \draw [arrow, densely dashed] (pillar3) -- (pillar1);
+\end{tikzpicture}%
+}
+\caption{Struktur Kerangka Kerja Pengembangan Panduan}
+\label{fig:framework_structure_scaled}
+\end{figure}
+Kerangka kerja utama artikel ini menggabungkan tiga bidang operasional dengan gaya Kepemimpinan 4.0. Tujuannya agar panduan yang dibuat membahas semua topik secara menyatu dalam satu sistem manajemen yang utuh, bukan terpisah-pisah.
+
+Inti dari kerangka kerja yang ada pada figure 1 adalah Kepemimpinan 4.0 yang berfungsi menyeimbangkan adopsi teknologi dengan nilai-nilai humanis. Inti tersebut ditopang oleh tiga pilar utama:
+\begin{enumerate}
+\item Pilar Operasional (Remote Work): Menjamin kelancaran kolaborasi tim terdistribusi.
+\item Pilar Strategis (Kolaborasi AI): Meningkatkan akurasi keputusan berbasis data.
+\item Pilar Kultural (Inklusi Neurodiversitas): Mengoptimalkan inovasi dari keberagaman cara berpikir.
+\end{enumerate}
+
+\subsection{Tahapan Metodologi}
+Guna mengembangkan kerangka kerja tersebut menjadi panduan yang aplikatif dan valid secara ilmiah, proses penelitian dalam artikel ini dilaksanakan melalui tiga tahapan metodologis sistematis sebagai berikut.
+
+\begin{enumerate}
+\item Tahap Pengumpulan Data atau Studi Literatur \\ Pengembangan panduan dimulai dengan eksplorasi konsep kunci melalui pengumpulan literatur. Sumber data kredibel diidentifikasi dari basis data akademik bereputasi seperti Google Scholar. Kriteria referensi dibatasi pada publikasi lima tahun terakhir (2020–2025) untuk menjamin relevansi dengan dinamika industri. Pencarian literatur dilakukan menggunakan kata kunci strategis seperti "Leadership 4.0", "Remote Work Management", "Human-AI Collaboration", "Neurodiversity in the Workplace", dan "Startup Organizational Culture" untuk memastikan cakupan materi yang komprehensif.
+
+\item Tahap Proses Memilah Topik \\
+Analisis tematik dilakukan setelah data terkumpul untuk mengidentifikasi pola dan strategi penting. Literatur dikelompokkan menjadi tiga fokus utama: strategi kerja jarak jauh yang menekankan komunikasi dan penilaian kinerja, kolaborasi AI yang berfokus pada pengambilan keputusan dan etika, serta inklusi neurodiversity yang membahas rekrutmen ramah dan penyesuaian lingkungan kerja.
+
+\item Tahap Rancang Panduan \\ Temuan analisis diintegrasikan menjadi kerangka kerja Kepemimpinan 4.0 yang menyeluruh di mana setiap komponen saling melengkapi. Proses diakhiri dengan perumusan indikator kinerja utama (KPI) berdasarkan praktik terbaik sebagai tolak ukur keberhasilan implementasi panduan di startup.
+\end{enumerate}
+
+\begin{thebibliography}{1}
+\bibliographystyle{IEEEtran}
+
+\bibitem{ref1}
+M. H. Jarrahi, D. Askay, A. Eshraghi, and P. Smith, "Artificial intelligence and work: Human-AI symbiosis in organizational decision-making," Business Horizons, vol. 66, no. 4, pp. 419–425, 2023.
+
+\bibitem{ref2}
+P. G. Northouse, Leadership: Theory and Practice, 9th ed. Thousand Oaks, CA: Sage Publications, 2022.
+
+\bibitem{ref3}
+A. S. Rao, "Leadership 4.0: The Changing Landscape of Leadership in the Digital Age," in Architects of Change: Designing Strategies for a Turbulent Business Environment, S. K. Sharma, Ed. New York, NY: Springer, 2020, pp. 15–32.
+
+\bibitem{ref4}
+P. Kumar and A. Sharma, "Artificial Intelligence in Leadership: responding to the new leadership challenges," Journal of Management and Organization, vol. 27, no. 5, pp. 1–17, 2021.
+
+\bibitem{ref5}
+N. Bloom, R. Han, and J. Liang, "How hybrid working from home works out," National Bureau of Economic Research, Working Paper 30292, 2022.
+
+\bibitem{ref6}
+A. Krzeminska, R. D. Austin, S. M. Bruyère, and D. Hedley, "The advantages of neurodiversity in the modern workplace," Journal of Management Studies, vol. 60, no. 5, pp. 1320-1345, 2023.
+
+\bibitem{ref7}
+A. J. Avwokeni, "Strategic leadership and transactional leadership: The mediating effect of digital leadership in the world of Industry 4.0," Journal of Economic and Administrative Sciences, vol. ahead-of-print, no. ahead-of-print, 2024. doi: 10.1108/JEAS-05-2023-0138.
+
+\bibitem{ref8}
+R. Ahmed et al., "Transactional and transformational leadership style: A conceptual review," Komar University of Science and Technology, Feb. 2024.
+
+\bibitem{ref9}
+D. S. Sull, C. Sull, and J. Bersin, "Five ways leaders can support remote work," MIT Sloan Management Review, vol. 61, no. 4, pp. 1–10, 2020.
+
+\bibitem{ref10}
+"Stitch Fix details new AI features arriving to aid its human stylists," Digital Commerce 360, Aug. 2025. [Daring]. Tersedia: https://www.digitalcommerce360.com/2025/08/15/stitch-fix-new-ai-features-human-stylists
+
+\bibitem{ref11}
+B. W. Oswar, "Work from home sebagai solusi penyelesaian pekerjaan pada masa pandemi covid-19," Jurnal Masalah-Masalah Hukum, vol. 49, no. 4, pp. 343-353, 2020.
+
+\bibitem{ref12}
+S. Raisch and S. Krakowski, "Artificial intelligence and management: The automation-augmentation paradox," Academy of Management Review, vol. 46, no. 1, pp. 192-210, 2021.
+
+\bibitem{ref13}
+A. Chamorro-Premuzic, D. Metin, and B. Erdogan, "The psychology of AI-enhanced leadership," Organizational Dynamics, vol. 52, no. 3, p. 100975, 2023.
+
+\bibitem{ref14}
+N. Doyle, "Neurodiversity at work: A biopsychosocial model and the impact on working adults," British Medical Bulletin, vol. 135, no. 1, pp. 108–125, 2020.
+
+\bibitem{ref15}
+L. M. Hartman and B. L. Hartman, "Neurodiversity in the workplace: An agenda for research and action," Diversity and Inclusion Research, vol. 1, no. 1, p.e70000, 2024.
+
+\end{thebibliography}
+
+\end{document}
