@@ -35,7 +35,6 @@
 }
 \maketitle
 
-% --- ABSTRAK BAHASA INGGRIS ---
 \renewcommand{\abstractname}{Abstract}
 \renewcommand{\IEEEkeywordsname}{Keywords}
 \begin{abstract}
@@ -46,7 +45,6 @@ Rapid digital advancements and post-pandemic shifts have fundamentally altered o
 Leadership 4.0, Technology Startups, Remote Work, AI Collaboration, Neurodiversity.
 \end{IEEEkeywords}
 
-% --- ABSTRAK BAHASA INDONESIA ---
 \renewcommand{\abstractname}{Abstrak}
 \renewcommand{\IEEEkeywordsname}{Kata Kunci}
 \begin{abstract}
